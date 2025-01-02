@@ -42,13 +42,20 @@ body{
   padding-right: 0.4em;
   margin-left: 1vh;
   font-size: x-small;
+  visibility: hidden;
+  display: none;
+  transition: visibility 0.1s linear;
 }
-.side-menu img{
+.side-items-container img{
   opacity: 0.5;
-  transition: opacity 0.1s cubic-bezier(.455, .03, .515, .955);;
+  transition: opacity 0.1s cubic-bezier(.455, .03, .515, .955);
 }
-.side-menu img:hover{
+.side-items-container img:hover{
   opacity: 1;
+}
+.side-items-container:hover p{
+  display: inline-block;
+  visibility: visible;
 }
 .side-menu > div > div{
   width: fit-content;
