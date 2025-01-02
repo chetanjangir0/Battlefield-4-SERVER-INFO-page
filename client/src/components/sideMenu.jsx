@@ -11,7 +11,8 @@ export default function SideMenu(){
               <img src="/battlefield-1.png" alt="" />
               <p>BATTLEFIELD 1</p>
             </div>
-            <div className="side-items-container">
+            <div className="side-items-container active-menu">
+              <div className="active-menu-decor" />
               <img src="/battlefield-4.png" alt="" />
               <p>BATTLEFIELD 4</p>
             </div>
