@@ -3,24 +3,51 @@ export default function SideMenu(){
       <div className='side-menu'>
         <div className='side-menu-tabs'>
           <div className="side-menu-games">
-            <img src="/battlefield-5.png" alt="" />
-            <img src="/battlefield-1.png" alt="" />
-            <img src="/battlefield-4.png" alt="" />
-            <img src="/battlefield-hardline.png" alt="" />
+            <div className="side-items-container">
+              <img src="/battlefield-5.png" alt="" />
+              <p>BATTLEFIELD V</p>
+            </div>
+            <div className="side-items-container">
+              <img src="/battlefield-1.png" alt="" />
+              <p>BATTLEFIELD 1</p>
+            </div>
+            <div className="side-items-container">
+              <img src="/battlefield-4.png" alt="" />
+              <p>BATTLEFIELD 4</p>
+            </div>
+            <div className="side-items-container">
+              <img src="/battlefield-hardline.png" alt="" />
+              <p>BATTLEFIELD HARDLINE</p>
+            </div>
           </div>
   
           <div className='side-menu-other'>
-            <img src="/career.png" alt="" />
-            <img src="/watch.svg" alt="" />
-            <img src="/news.svg" alt="" />
+            <div className="side-items-container">
+              <img src="/career.png" alt="" />
+              <p>CAREER</p>
+            </div>
+            <div className="side-items-container">
+              <img src="/watch.svg" alt="" />
+              <p>WATCH</p>
+            </div>
+            <div className="side-items-container">
+              <img src="/news.svg" alt="" />
+              <p>NEWS</p>
+            </div> 
           </div>
   
         </div>
 
         <div className="side-menu-exit">
           <div className='side-menu-misc'>
-            <div><img src="/side-menu-help.svg" alt="" /></div>
-            <div><img src="/side-menu-quit.svg" alt="" /></div>
+            <div className="side-items-container">
+              <img src="/side-menu-help.svg" alt="" />
+              <p>HELP</p>
+            </div>
+            <div className="side-items-container">
+              <img src="/side-menu-quit.svg" alt="" />
+              <p>QUIT</p>
+            </div>
           </div>
         </div>
         {/* <hr className="vertical-line"/> */}

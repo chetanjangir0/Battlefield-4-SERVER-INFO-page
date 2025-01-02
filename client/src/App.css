@@ -1,9 +1,16 @@
-body{
-  background: url('./assets/menu__background.jpg') repeat center center fixed;
-  background-size: cover;
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+*{
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+}
+body{
+  font-family: "Rajdhani", serif;
+  font-size: 2vh;
+  color: white;
+  background: url('./assets/menu__background.jpg') repeat center center fixed;
+  background-size: cover;
 }
 
 .bg-darker{
@@ -21,6 +28,21 @@ body{
   width: 3.5em;
   height: 100%;
 }
+
+.side-items-container{
+  position: relative;
+}
+.side-menu p{
+  position: absolute;
+  left: 5.4vh;
+  top: 1vh;
+  width: max-content;
+  background-color: black;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  font-size: smaller;
+}
+
 .side-menu > div > div{
   width: fit-content;
   display: flex;
@@ -36,14 +58,12 @@ body{
 
 .side-menu img{
   width: 4vh;
+  margin: 0px;
+  display: block;
 }
 
 .side-menu-other{
   height: 18vh;
-}
-
-.side-menu-other :not(:first-child){
-  width: 3.5vh;
 }
 
 .side-menu-misc{
