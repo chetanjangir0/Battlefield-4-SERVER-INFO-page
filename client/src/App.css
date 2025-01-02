@@ -27,6 +27,7 @@ body{
   position: fixed;
   width: 3.5em;
   height: 100%;
+  z-index: 2;
 }
 
 .side-items-container{
@@ -110,10 +111,42 @@ body{
   width: 0.3vh;
   background-color: orange;
 }
-/* .vertical-line{
-  width: 2px; 
-  height: 100px;
+
+/* Side menu styling ends here  */
+
+.side-menu-line{
+  position: absolute;
+  left: 8vh;
+  opacity: 0.15;
+  width: 1px; 
+  height: 100%;
   background-color: white;
   border: none;
-  
-} */
+}
+
+
+.mid-section{
+  margin-left: 12vh;
+}
+
+
+/* breadcrumb menu */
+.current-breadcrumb{
+  text-transform: uppercase;
+  font-size: 4vh;
+  font-weight: 600;
+  line-height: 4vh;
+}
+
+.privious-breadcrumb{
+  letter-spacing: .1vh;
+  text-transform: uppercase;
+  margin-bottom: .3vh;
+  margin-right: 1.5vh;
+  font-size: 1.5vh;
+  font-weight: 600;
+  line-height: 2vh;
+  text-decoration: none;
+  transition: opacity .1s;
+  display: flex;
+}

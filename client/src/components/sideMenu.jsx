@@ -66,7 +66,6 @@ export default function SideMenu() {
         <OtherItems />
       </div>
       <ExitMenu />
-      {/* <hr className="vertical-line"/> */}
     </div>
   )
 }
