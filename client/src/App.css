@@ -21,11 +21,12 @@ body{
   height: 100%;
 }
 .side-menu div{
+  width: fit-content;
   display: flex;
   flex-direction: column;
   margin-left: 0.5vw;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
 }
 .side-menu-games{
   height: 30vh;
