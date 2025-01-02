@@ -30,26 +30,32 @@ body{
 }
 
 .side-items-container{
-  position: relative;
+  display: flex;
+  width: auto;
+  align-items: center;
+
 }
 .side-menu p{
-  position: absolute;
-  left: 5.4vh;
-  top: 1vh;
   width: max-content;
   background-color: black;
   padding-left: 0.4em;
   padding-right: 0.4em;
-  font-size: smaller;
+  margin-left: 1vh;
+  font-size: x-small;
 }
-
+.side-menu img{
+  opacity: 0.5;
+  transition: opacity 0.1s cubic-bezier(.455, .03, .515, .955);;
+}
+.side-menu img:hover{
+  opacity: 1;
+}
 .side-menu > div > div{
   width: fit-content;
   display: flex;
   flex-direction: column;
   margin-left: 1vw;
   justify-content: space-around;
-  align-items: center;
 }
 .side-menu-games{
   height: 25vh;
