@@ -1,7 +1,9 @@
 body{
-  /* background: url('./assets/menu__background.png') no-repeat center center fixed; */
-  background-image: url("assets/menu__background.png");
+  background: url('./assets/menu__background.jpg') repeat center center fixed;
   background-size: cover;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
 }
 
 .bg-darker{
@@ -11,4 +13,32 @@ body{
   width: 100%;
   height: 100%;
   background-color: rgba(0, 12, 19, 0.6);
+  z-index: -1;
+}
+
+.side-menu{
+  width: 3.5em;
+  height: 100%;
+}
+.side-menu div{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5vw;
+  justify-content: space-around;
+  align-content: center;
+}
+.side-menu-games{
+  height: 30vh;
+}
+
+.side-menu img{
+  width: 4vh;
+}
+
+.side-menu-other :not(:first-child){
+  width: 3.5vh;
+}
+
+.side-menu-other{
+  height: 20vh;
 }
