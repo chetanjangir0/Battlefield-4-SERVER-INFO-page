@@ -17,29 +17,53 @@ body{
 }
 
 .side-menu{
+  position: fixed;
   width: 3.5em;
   height: 100%;
 }
-.side-menu div{
+.side-menu > div > div{
   width: fit-content;
   display: flex;
   flex-direction: column;
-  margin-left: 0.5vw;
+  margin-left: 1vw;
   justify-content: space-around;
   align-items: center;
 }
 .side-menu-games{
-  height: 30vh;
+  height: 25vh;
+  margin-top: 7.2rem;
 }
 
 .side-menu img{
   width: 4vh;
 }
 
+.side-menu-other{
+  height: 18vh;
+}
+
 .side-menu-other :not(:first-child){
   width: 3.5vh;
 }
 
-.side-menu-other{
-  height: 20vh;
+.side-menu-misc{
+  position: absolute;
+  bottom: 2rem;
+  height: 12vh;
 }
+
+.side-menu-misc div{
+  text-align: center;
+  width: 4vh;
+}
+
+.side-menu-misc img{
+  width: 2vh;
+}
+/* .vertical-line{
+  width: 2px; 
+  height: 100px;
+  background-color: white;
+  border: none;
+  
+} */

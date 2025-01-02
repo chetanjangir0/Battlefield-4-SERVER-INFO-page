@@ -16,8 +16,14 @@ export default function SideMenu(){
           </div>
   
         </div>
-  
-        <div className='side-menu-misc'></div>
+
+        <div className="side-menu-exit">
+          <div className='side-menu-misc'>
+            <div><img src="/side-menu-help.svg" alt="" /></div>
+            <div><img src="/side-menu-quit.svg" alt="" /></div>
+          </div>
+        </div>
+        {/* <hr className="vertical-line"/> */}
       </div>
     )
   }
