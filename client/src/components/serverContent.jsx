@@ -1,6 +1,6 @@
 
 import BackendData from "./backendData";
-
+import ServerMaps from "./serverMaps";
 export default function ServerContent(){
     const serverName = "! RC3-BASEMAPS";
     
@@ -27,8 +27,7 @@ export default function ServerContent(){
             </div>
 
             <BackendData />
-
-
+            <ServerMaps />
         </div>
     )
 }
