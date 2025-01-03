@@ -234,7 +234,6 @@ body{
   text-align: center;
   letter-spacing: .1vh;
   text-transform: uppercase;
-
   width: 28vh;
   height: 4.8vh;
   border: 1px solid rgba(255, 255, 255, .2);
@@ -242,9 +241,21 @@ body{
   align-items: center;
   margin-right: 1vh;
   display: flex;
+  font-weight: 700;
+
+  transition: all 0.2s ease-in-out;
 }
 
+.server-buttons > div:hover{
+  background-color: white;
+  color: rgb(16, 16, 16);
+  cursor: default;
+}
 .server-buttons img{
   width: 1.8vh;
   margin-right: 1vh;
+  transition: all 0.2s ease-in-out;
+}
+.server-buttons > div:hover img{
+  filter: invert();
 }
