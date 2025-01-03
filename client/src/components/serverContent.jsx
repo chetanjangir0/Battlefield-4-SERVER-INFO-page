@@ -6,6 +6,7 @@ export default function ServerContent(){
     
     return (
         <div className="server-content-container">
+            <div className="bottom-gradient-bar"></div>
             <div className="server-info">
                 <div className="server-name">{serverName}</div>
                 <div class="server-details">

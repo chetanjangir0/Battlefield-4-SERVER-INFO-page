@@ -189,6 +189,7 @@ body {
 
 
 /* Server content */
+
 .server-content-container {
   width: 127vh;
   height: 82.4vh;
@@ -196,6 +197,15 @@ body {
   margin-top: 8vh;
   position: relative;
   overflow: auto;
+}
+
+.bottom-gradient-bar {
+  position: fixed;
+  bottom: 0px;
+  width: inherit;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 51%, #014a5a);
+  height: 4vh;
+  z-index: 5;
 }
 
 .server-info {
@@ -418,8 +428,8 @@ body {
 }
 
 .server-content-container::-webkit-scrollbar-thumb {
-  background: white; 
+  background: white;
   width: 2px;
   height: 10px;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
