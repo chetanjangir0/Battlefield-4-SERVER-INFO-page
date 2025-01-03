@@ -1,7 +1,7 @@
 import './App.css';
 import SideMenu from './components/sideMenu';
 import BrowserBreadcrumb from './components/browserBreadcrumb';
-
+import ServerContent from './components/serverContent';
 function App() {
 
   return (
@@ -12,7 +12,7 @@ function App() {
 
       <div className="mid-section">
         <BrowserBreadcrumb />
-
+        <ServerContent />
       </div>
     </>
   )
