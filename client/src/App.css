@@ -138,6 +138,10 @@ body {
 
 
 /* breadcrumb menu */
+.breadcrumb-container{
+  display: inline-block;
+  margin-top: 2vh;
+}
 .current-breadcrumb {
   text-transform: uppercase;
   font-size: 4vh;
@@ -147,7 +151,6 @@ body {
 
 .previous-breadcrumb {
   height: 4vh;
-  margin-top: 2vh;
   letter-spacing: .1vh;
   text-transform: uppercase;
   margin-right: 1.5vh;
@@ -436,4 +439,14 @@ body {
   width: 2px;
   height: 10px;
   border-radius: 5px;
+}
+
+
+/* Invite menu */
+.invite-menu-container{
+  position: absolute;
+  right: 0;
+  height:100vh;
+  width: 30vh;
+  background-color: rgba(0, 0, 0, 0.6);
 }
