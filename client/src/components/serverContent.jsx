@@ -1,6 +1,3 @@
-
-
-
 export default function ServerContent(){
     const serverName = "! RC3-BASEMAPS";
     
@@ -17,10 +14,13 @@ export default function ServerContent(){
             </div>
 
             <div className="server-buttons">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>Join</div>
+                <div>Spectate</div>
+                <div>Join as commander</div>
+                <div>
+                    <img src="https://cdn.prod.website-files.com/6013fff62154adaa4600f932/601ab1b8abc05e847f1ac43f_favorites%20-%20white.svg" alt="" />
+                    <div>13672</div>
+                </div>
             </div>
 
         </div>
