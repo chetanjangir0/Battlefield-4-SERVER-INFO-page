@@ -14,7 +14,7 @@ body{
 }
 
 .bg-darker{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -138,10 +138,11 @@ body{
   line-height: 4vh;
 }
 
-.privious-breadcrumb{
+.previous-breadcrumb{
+  height: 4vh;
+  margin-top: 2vh;
   letter-spacing: .1vh;
   text-transform: uppercase;
-  margin-bottom: .3vh;
   margin-right: 1.5vh;
   font-size: 1.5vh;
   font-weight: 600;
@@ -149,4 +150,29 @@ body{
   text-decoration: none;
   transition: opacity .1s;
   display: flex;
+}
+
+
+.previous-breadcrumb a, .previous-breadcrumb div{
+  margin-right: 1.5vh;
+  max-width: 100%;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumb-back img{
+  opacity: 0.7;
+  transition: opacity .1s;
+
+}
+.breadcrumb-back img:hover{
+  opacity: 1;
+}
+.previous-breadcrumb img{
+  width: 1vh;
+}
+
+.previous-breadcrumb a:hover{
+  font-weight: 700;
 }
