@@ -1,20 +1,37 @@
+import { useEffect, useState } from "react"
+
 export default function BackendData(){
+
+    const [serverData, setServerData] = useState(null)
+
+    useEffect(()=>{
+        fetch("http://localhost:5000/api/server-info")
+        .then(res=>res.json())
+        .then(data=>{
+            setServerData(data)
+        })
+        .catch(error=>console.log("Error fetching server info:", error))
+    }, []);
+
+    if(!serverData){
+        return <div className="data-loading">Loading Server Data...</div>
+    }
     return (
         <div>
             <div className="current-stats">
                 <div>
                     <div>Players</div>
-                    <div className="player-stats">60/64</div>
+                    <div className="player-stats">{serverData.players}</div>
                 </div>
 
                 <div>
                     <div>Ping</div>
-                    <div className="player-stats">104ms</div>
+                    <div className="player-stats">{serverData.ping}</div>
                 </div>
 
                 <div>
                     <div>Tickrate</div>
-                    <div className="player-stats">60 Hz</div>
+                    <div className="player-stats">{serverData.tickrate}</div>
                 </div>
 
                 
@@ -23,114 +40,32 @@ export default function BackendData(){
             <div className="server-settings">
                 <div>
                     <div>Settings</div>
-                    <div className="settings">
-                        <div>Region</div>
-                        <div>europe - de</div>
-                    </div>
-                    <div className="settings">
-                        <div>Punkbaster</div>
-                        <div>on</div>
-                    </div>
-                    <div className="settings">
-                        <div>Fairfight</div>
-                        <div>on</div>
-                    </div>
-                    <div className="settings">
-                        <div>Password</div>
-                        <div>off</div>
-                    </div>
-                    <div className="settings">
-                        <div>Preset</div>
-                        <div>Normal</div>
-                    </div>
+                    {Object.entries(serverData.settings).map(([key, value])=>(
+                        <div className="settings" key={key}>
+                            <div>{key}</div>
+                            <div>{value}</div>
+                        </div>
+                    ))}
                 </div>
 
                 <div>
                     <div>Advanced</div>
-                    <div className="settings">
-                        <div>Minimap</div>
-                        <div>on</div>
-                    </div>
-                    <div className="settings">
-                        <div>Only squad leader spawn</div>
-                        <div>off</div>
-                    </div>
-                    <div className="settings">
-                        <div>vehicles</div>
-                        <div>on</div>
-                    </div>
-                    <div className="settings">
-                        <div>Team Balance</div>
-                        <div>On</div>
-                    </div>
-                    <div className="settings">
-                        <div>Minimap Spotting</div>
-                        <div>On</div>
-                    </div>
-                    <div className="settings">
-                        <div>HUD</div>
-                        <div>on</div>
-                    </div>
-                    <div className="settings">
-                        <div>3p vehicle cam</div>
-                        <div>on</div>
-                    </div>
-                    <div className="settings">
-                        <div>regenerative health</div>
-                        <div>on</div>
-                    </div>
-                    <div className="settings">
-                        <div>kill cam</div>
-                        <div>on</div>
-                    </div>
-                    <div className="settings">
-                        <div>Friendly fire</div>
-                        <div>off</div>
-                    </div>
-                    <div className="settings">
-                        <div>3d spotting</div>
-                        <div>on</div>
-                    </div>
-                    <div className="settings">
-                        <div>enemy name tags</div>
-                        <div>on</div>
-                    </div>
+                    {Object.entries(serverData.advanced).map(([key, value])=>(
+                        <div className="settings" key={key}>
+                            <div>{key}</div>
+                            <div>{value}</div>
+                        </div>
+                    ))}
                 </div>
 
                 <div>
                     <div>Rules</div>
-                    <div className="settings">
-                        <div>Tickets</div>
-                        <div>400</div>
-                    </div>
-                    <div className="settings">
-                        <div>Vehicle spawn delay</div>
-                        <div>25</div>
-                    </div>
-                    <div className="settings">
-                        <div>Bullet damage</div>
-                        <div>100</div>
-                    </div>
-                    <div className="settings">
-                        <div>Kick after team kills</div>
-                        <div>5</div>
-                    </div>
-                    <div className="settings">
-                        <div>Player health</div>
-                        <div>100</div>
-                    </div>
-                    <div className="settings">
-                        <div>Player respawn time</div>
-                        <div>100</div>
-                    </div>
-                    <div className="settings">
-                        <div>Kick after idle</div>
-                        <div>300</div>
-                    </div>
-                    <div className="settings">
-                        <div>Ban after kicks</div>
-                        <div>3</div>
-                    </div>
+                    {Object.entries(serverData.rules).map(([key, value])=>(
+                        <div className="settings" key={key}>
+                            <div>{key}</div>
+                            <div>{value}</div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

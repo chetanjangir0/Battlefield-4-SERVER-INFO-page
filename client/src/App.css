@@ -285,6 +285,10 @@ body {
 }
 
 /* backend content */
+
+.data-loading{
+  font-size: 10vh;
+}
 .current-stats {
   margin-bottom: 2.5vh;
   display: flex;
