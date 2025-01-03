@@ -106,12 +106,3 @@ npm run dev
 - Improve responsiveness for mobile devices.
 
 ---
-
-## License
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## Acknowledgments
-- Design inspired by Battlefield 4's Server Info UI.
-- Mock data created for development purposes.
