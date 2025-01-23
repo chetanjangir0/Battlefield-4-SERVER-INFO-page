@@ -1,6 +1,7 @@
 # Battlefield 4 Server Info Page
 
 This project is a **Battlefield 4 Server Info Page** built with **React.js** (frontend) and **Node.js** (backend). The application fetches server information from a backend API and displays it in a visually appealing and interactive interface, based on the provided design.
+For the live preview of the website [click here](https://battlefield-4-server-info-client.vercel.app/)
 
 ## Table of Contents
 - [Features](#features)
